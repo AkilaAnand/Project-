@@ -1,0 +1,129 @@
+                                                               ARITHMETIC CALCULATOR
+
+
+PROGRAM:
+
+package com.calculator;
+import java.util.Scanner;
+
+public class Arithmeticcalculator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        //declaring variables
+		double firstnumber, secondnumber;
+		double result_operation_output;
+		// creating scanner for object for allow input
+		Scanner scannerobject = new Scanner(System.in);
+		do {
+			System.out.println("****************************************");
+			System.out.println("1. + for ADDITION");
+			System.out.println("2. - for SUBTRACTION");
+			System.out.println("3. * for MULTIPLICATION");
+			System.out.println("4. / for DIVISION");
+			System.out.println("5. Q for QUIT");
+			System.out.println("****************************************");
+			// ask user to enter first number
+			System.out.print("Enter your first number:\n");
+			firstnumber = scannerobject.nextDouble();
+			// ask user to enter second number
+			System.out.print("Enter your second number:\n");
+			secondnumber = scannerobject.nextDouble();
+			System.out.print("Enter the operators like (+, -, *, /) only:\n");
+           // storing the operator in char object
+			char operator = scannerobject.next().charAt(0);
+			switch (operator) {
+			case '+':
+	        result_operation_output = firstnumber + secondnumber;
+	        break;
+			case '-':
+		    result_operation_output = firstnumber - secondnumber;
+		    break;
+			case '*':
+		    result_operation_output = firstnumber * secondnumber;
+		    break;
+			case '/':
+		    result_operation_output = firstnumber + secondnumber;
+		    break;
+			case 'Q':
+		    System.exit(0);
+		    default:
+		    System.out.printf("Please Enter specified operator only:");
+		    return;
+			}
+		    System.out.println(firstnumber + " " + operator + " " + secondnumber + " is : " + result_operation_output);
+		    } while(result_operation_output != 'Q');
+		     scannerobject.close();
+		
+		       }
+				
+		   }
+
+OUTPUT:
+
+****************************************
+1. + for ADDITION
+2. - for SUBTRACTION
+3. * for MULTIPLICATION
+4. / for DIVISION
+5. Q for QUIT
+****************************************
+Enter your first number:
+45
+Enter your second number:
+78
+Enter the operators like (+, -, *, /) only:
++
+45.0 + 78.0 is : 123.0
+****************************************
+1. + for ADDITION
+2. - for SUBTRACTION
+3. * for MULTIPLICATION
+4. / for DIVISION
+5. Q for QUIT
+****************************************
+Enter your first number:
+36
+Enter your second number:
+25
+Enter the operators like (+, -, *, /) only:
+-
+36.0 - 25.0 is : 11.0
+****************************************
+1. + for ADDITION
+2. - for SUBTRACTION
+3. * for MULTIPLICATION
+4. / for DIVISION
+5. Q for QUIT
+****************************************
+Enter your first number:
+67
+Enter your second number:
+78
+Enter the operators like (+, -, *, /) only:
+*
+67.0 * 78.0 is : 5226.0
+****************************************
+1. + for ADDITION
+2. - for SUBTRACTION
+3. * for MULTIPLICATION
+4. / for DIVISION
+5. Q for QUIT
+****************************************
+Enter your first number:
+67
+Enter your second number:
+55
+Enter the operators like (+, -, *, /) only:
+/
+67.0 / 55.0 is : 122.0
+****************************************
+1. + for ADDITION
+2. - for SUBTRACTION
+3. * for MULTIPLICATION
+4. / for DIVISION
+5. Q for QUIT
+****************************************
+
+REFERENCE:
+https://github.com/AkilaAnand/Project-
